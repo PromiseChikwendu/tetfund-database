@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Menu Test</title>
+    <style>
+        /* Include the CSS here */
+        .admin-menu {
+            background-color: #f8f9fa; /* Light background color */
+            padding: 10px; /* Padding around the menu */
+            border-bottom: 2px solid #ccc; /* Border for separation */
+        }
+
+        .admin-menu ul {
+            list-style-type: none; /* Remove bullet points */
+            display: flex; /* Align items horizontally */
+            justify-content: space-around; /* Space out the menu items */
+            padding: 0; /* Remove default padding */
+            margin: 0; /* Remove default margin */
+        }
+
+        .admin-menu li {
+            margin: 0 15px; /* Add horizontal spacing between items */
+        }
+
+        .admin-menu a {
+            text-decoration: none; /* Remove underline */
+            color: #007bff; /* Link color */
+            font-weight: bold; /* Make links bold */
+            transition: color 0.3s; /* Smooth color transition */
+        }
+
+        .admin-menu a:hover {
+            color: #0056b3; /* Darker color on hover */
+        }
+    </style>
+</head>
+<body>
+
+<div class="admin-menu">
+    <ul>
+        <li><a href="#">Intervention Summary</a></li>
+        <li><a href="#">Add Staff Interface</a></li>
+        <li><a href="#">Apply for TetFund Intervention</a></li>
+        <li><a href="#">Manage Staff</a></li>
+        <li><a href="#">Database</a></li>
+    </ul>
+</div>
+
+</body>
+</html>
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.admin-menu {
+    background-color: #f8f9fa; /* Light background color */
+    padding: 10px; /* Padding around the menu */
+    border-bottom: 2px solid #ccc; /* Border for separation */
+}
+
+.admin-menu ul {
+    list-style-type: none; /* Remove bullet points */
+    display: flex; /* Align items horizontally */
+    justify-content: space-around; /* Space out the menu items */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.admin-menu li {
+    margin: 0 15px; /* Add horizontal spacing between items */
+}
+
+.admin-menu a {
+    text-decoration: none; /* Remove underline */
+    color: #007bff; /* Link color */
+    font-weight: bold; /* Make links bold */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.admin-menu a:hover {
+    color: #0056b3; /* Darker color on hover */
+}
+
+/* Add media query for smaller screens */
+@media (max-width: 600px) {
+    .admin-menu ul {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: center; /* Center items */
+    }
+    .admin-menu li {
+        margin: 5px 0; /* Adjust spacing for vertical layout */
+    }
+}
+
+/* Other existing styles remain unchanged... */
+
+
+.login-container {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+
+
+.intervention-summary-container {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #28a745;
+    color: white;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.back-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Add staff css */
+
+.add-staff-container {
+    width: 60%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+
+/* Apply for tetfund */
+
+.apply-tetfund-container {
+    width: 60%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Manage Staff Page */
+
+.manage-staff-container {
+    width: 70%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+form {
+    margin-bottom: 30px;
+}
+
+form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#staffTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#staffTable th, #staffTable td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+#staffTable th {
+    background-color: #f4f4f4;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Intervention Form Styling */
+
+.intervention-form-container {
+    width: 60%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 150px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Database Page Styling */
+
+.database-container {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.data-section {
+    margin-bottom: 30px;
+}
+
+.data-section h2 {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+
+
+<section class="gallery-section">
+    <h2>Photo Gallery</h2>
+    <div class="gallery">
+        <img src="path-to-image1.jpg" alt="Gallery Image 1">
+        <img src="path-to-image2.jpg" alt="Gallery Image 2">
+        <img src="path-to-image3.jpg" alt="Gallery Image 3">
+    </div>
+</section>

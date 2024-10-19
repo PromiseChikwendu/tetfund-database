@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+    
+
+</head>
+<body>
+   
+    <!-- Password Protection Modal -->
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h8>Enter Your Gateway Password to Proceede:</h8>
+        <input type="password" id="passwordInput">
+        <button id="loginButton">Login</button>
+        <p id="errorMessage" style="display:none; color:red;">Incorrect password. Please try again.</p>
+    </div>
+</div>
+
+<!-- Logout Confirmation Modal -->
+<div id="logoutModal" class="modal" style="display:none;">
+    <div class="modal-content">
+        <span class="close-logout">&times;</span>
+        <h8>Are you sure you want to log out?</h8>
+        <button id="confirmLogoutButton">Logout</button>
+        <button id="cancelLogoutButton">Cancel</button>
+    </div>
+</div>
+
+
+
+
+<!-- Existing navigation menu -->
+<nav class="admin-menu">
+    <ul>
+        <li><a href="intervention-summary.html">Intervention Summary</a></li>
+        <li><a href="#" class="restricted" data-section="add-staff.html">Add Staff</a></li>
+        <li><a href="apply-tetfund.html">Apply for TetFund Intervention</a></li>
+        <li><a href="#" class="restricted" data-section="manage-staff.html">Manage Staff</a></li>
+        <li><a href="intervention-sample-form.html">Intervention Form</a></li>
+        <li><a href="#" class="restricted" data-section="database.html">Data Base</a></li>
+        <li><a href="project-gallery.html">Project Gallery</a></li>
+        <li><a href="news-and-updates.html">New and Updates</a></li>
+        <li><a href="#" id="logoutLink">Logout</a></li>
+    </ul>
+</nav>
+
+<!-- Background Image Section -->
+<section class="hero-section">
+    <img class="background-image" src="image/image.jpg" alt="Admin Dashboard Background">
+    <div class="hero-text">
+        <h1><span id="typed-text"></span><span id="cursor"></span></h1>
+        <p>Manage TetFund interventions and staff efficiently. Use the menu to navigate the available options.</p>
+    
+</section>
+    
+    
+    <main>
+
+
+
+        <section class="news-section">
+            <h1>TETFUND WINS 2024 ANTHOLOGY VISIONARY AWARD</h1>
+            <div class="news-grid">
+                <img src="image/tetfund win.jpeg" alt="Gallery Image 1">
+            
+            </div>
+            
+            
+            <p>Following the Tertiary Education Trust Fund (TETFund) efforts to drive the infusion of technology into curriculum and instructional delivery process in Nigeria public tertiary institutions, the Interventionist Agency has emerged as winner of the 2024 Anthology Visionary Award for Leadership in transforming education through technology.
+        
+                The event which took place in Orlando World Center in United States before a global audience of over 2000 participants drawn from Academia witnessed the Executive Secretary of TETFund, Arc. Sonny Echono receiving the award on behalf of the Agency.
+                
+                In his acceptance speech on behalf of the Agency, the Executive Secretary highlighted that the initiative of the Fund are in line with the Renewed Hope Agenda of President Bola Ahmed Tinubu who aims to reposition the education sector in the country, and ensure all graduates of tertiary institutions attain digital literacy before graduation.
+                
+                Recall that the Federal Ministry of Education under the leadership of Prof. Tahir Mamman unveiled the Tertiary Education Research and Application Systems (TERAS) and Beneficiaries Identity Management System (BIMS) on 17th of October, 2023 at the Federal Ministry of Education Auditorium, Abuja. The Initiative which was driven by TETFund in partnership with Anthology and Blackboard team to promote a more inclusive ecosystem in tertiary institutions and provide wide range services to researchers, students and further enhance teaching and learning process in tertiary institutions.
+                
+                According to Echono “In today’s digital world, proficiency in digital literacy is not just beneficial; it is essential for academic success and employability. Many countries have successfully integrated digital literacy into their educational systems, reaping the benefits of improved teaching and learning outcomes and accelerated economic growth. With our large youth population and emerging technology industry, Nigeria is uniquely positioned to benefit from similar initiatives.
+                
+                “However, our curriculum does not adequately address the digital skills required for modern workplaces and everyday life. Some of the identified gaps include: lack of comprehensive digital literacy components in our existing curricula, which results in unprepared graduates who are unprepared for technology-driven job markets; educators are as well not sufficiently trained or resourced to teach critical digital skills; infrastructure such as computers and reliable internet access is inadequate, as many tertiary institutions are either unserved or under served.
+                
+                “We do not have a digital literacy index to measure and benchmark our standards, and there is significant disparity in digital literacy and access between urban and rural areas, exacerbating educational and economic inequalities.”
+                
+                To bridge this gap, TETFund as an Intervention Agency is supporting over 280 public tertiary institutions and has laid a strategic plan which will enable all students attain digital literacy before leaving the tertiary education system. The TETFund Boss disclosed at the event that the Agency has designed a phased integration plan across educational levels and equipping educators in the country with necessary digital skills, facilitating critical partnerships with global bodies, and have established National Center of Excellence for Development of Digital Literacy and Emerging Skills.
+                
+                At the event, over 2000 participants were intimated with the activities and ambitious plans of TETFund, and efforts that have been made to domesticate learning management systems, and better manage student’s information by deploying information systems.</p>
+                <h7>October 8, 2024</h7>
+        
+        </section>
+        
+        <section class="news-section">
+            <h1>The Minister of Education Receives TETFund Ad hoc Committees’ Reports …Says Govt Will Stop Funding of Non-Performing Centres of Excellence</h1>
+            <div class="news-grid">
+                <img src="image/adhoc.jpg" alt="Gallery Image 1">
+            
+            </div>
+            
+            
+            <p>The Minister of Education, Prof. Tahir Mamman has received the reports of the TETFund ad hoc Committees on Assessment/Review of TETFund Centres of Excellence and that of the Operationalization of Skills Development Special Intervention, warning that Government will stop the funding of Centres of Excellence that do not meet expectations.
+        
+                While stating that productivity was key if the centres desired continuous funding from Government, Prof. Mamman assured that those that have performed well would be encouraged to expand the scope of their activities or get all needed support in specializing their operations.
+                
+                “The Government is encouraging our scholars to simply rise to the occasion and deliver their scholarship as world class scholars should do, we are not going to reward indolence. We cannot be giving free money to institutions that are not doing what they are supposed to do.
+                
+                “We are really committed to doing things differently, we also want to raise the equipment level in our tertiary institutions so that they can provide all the skill sets needed in Nigeria in the highest quality that can service the country locally and internationally,” he said.
+                
+                Speaking on the reasons for the establishment of the Centres, Executive Secretary of TETFund, Arc. Sonny Echono explained that the Fund figured that there were not enough resources available to fund and improve facilities in all tertiary institutions at once. Hence, the idea was to establish one Centre across geopolitical zones and equip it with the right facilities.
+                
+                “The idea was to incubate, to have one Centre, the right equipment, the right tools and the right faculty and experts that will lead our efforts in research, promotion of scholarship in order to inspire other centres,” he said.
+                
+                The report of the Committee on Review/Assessment of Centres of Excellence headed by Prof. Oyewale Tomori, recommended that none of the Centres should be upgraded. This is because most of the Centres failed to utilize the first seed grant of N150 million which were allocated for needed infrastructures.
+                
+                According to Prof. Tomori “For the future selection of TETFund Centres of Excellence, the Agency should identify the areas needing technological advancement and capacity building for national development, and call for proposal that will be subjected to competitive bidding and selection process. In the same vein, TETFund should organize regular and annual project review meetings with the Centres.
+                
+                “There should also be training and retraining programme for Centre Directors and the head of the units domiciled in the Centre. Since most Centres did not utilize their first seed grant of N150 million for the initial infrastructures required in the Centres, TETFund should provide some bail out funds to the Centres to enable proper take-off of the Centres”.
+                
+                For the Advisory Committee on Operationalization of TETFund Skills Development Special Intervention, the Chairman of the Committee, Prof. Idris Bugaje who was represented by a member of the committee, Prof. Nuhu Yakubu recommended that polytechnics for the 2024 Special Intervention of TETFund be selected based on geo-political zones.
+                
+                Recall that TETFund constituted three advisory committees in March to assess the status of its Centres of Excellence, equipment in laboratories and workshops of tertiary institutions and recommend operationalization of the Skills Development Special Intervention programme of TETFund.</p>
+                <h7>October 8, 2024</h7>
+        
+        </section>
+        
+        
+        <section class="news-section">
+            <h1>TETFund has Funded 5,525 Physical Infrastructure in Beneficiary Institutions – Echono</h1>
+            <div class="news-grid">
+                <img src="image/physical.jpg" alt="Gallery Image 1">
+            
+            </div>
+            
+            
+            <p>The Executive Secretary of Tertiary Education Trust Fund (TETFund), Arc. Sonny Echono has disclosed that the Fund has since inception in 2011 funded a total of 5,525 physical infrastructure in its Beneficiary Institutions, thereby bridging infrastructure gaps in the institutions.
+        
+                The Executive Secretary made this known recently while speaking at the 26th Seminar of the Nigeria Academy of Education held in Abuja where he delivered a lecture titled “Funding of Tertiary Education in Nigeria”.
+                
+                Speaking on TETFund’s response to the funding of public tertiary institutions in Nigeria, Arc. Echono stated that in fulfilment of its mandate of providing intervention support towards the rehabilitation, restoration and consolidation of tertiary education in Nigeria, the Fund has also provided funding for 188 equipment fabrication and 576 faculty/departmental libraries in tertiary institutions across the country.
+                
+                “In addition, the Fund has awarded grants of 19,297 Institutional Based Research (IBR) projects and 912 research projects under the National Research Fund (NRF) which is designed to support impactful research which will contribute to national developmental efforts as well tackle global challenges.
+                
+                “The fund has also sponsored and supported several research and innovation initiatives such as Research for impact (R4i), TETFund Alliance for Innovation Research (TETFAIR), and the Innovation Fellowship for Aspiring Inventors and Researchers (i-FAIR) programmes targeted at deepening impactful research and uptake of research outcomes with potentials for commercialization as panacea to solving societal problems,” he said.
+                
+                Speaking on capacity building of staff of Beneficiary Institutions, the Executive Secretary stated that the Fund has sponsored 23,271 academic staff of public tertiary educational institutions in Nigeria for Ph.D programmes, while 15,977 academic staff have been sponsored for Master’s degrees to date.
+                
+                While noting the importance of tertiary education to sustainable development, Arc. Echono stated the need to sustain the funding of tertiary education in the country.
+                
+                “Sustainable financing of tertiary education requires predictable and guaranteed funding. Hence, the future lies in sustainable funding, which is clearly rooted in sharing costs, diversifying income sources, creating new sources of income, building partnerships at home and abroad, and creating wealth beyond teaching and research.
+                
+                 
+                
+                “The funding challenges for tertiary education system inevitably impacts on the individual institutions. The inability of Government to solely and fully finance tertiary education necessitates that the institutions be given the leverage to explore alternative sources of funding to become more efficient and effective in line with new vistas,” he said.
+                
+                Accordingly, the Executive Secretary recommended that  funding models such as cost-sharing, students loans, scholarships and bursary, R&D, partnerships among others, could be explored as workable options for sustainable funding.
+                
+                </p>
+                <h7>October 8, 2024</h7>
+        
+        </section>
+        
+
+
+        <section class="fedpodam-info">
+            <h2>About FEDPODAM</h2>
+            <h8>FEDPODAM (Federal Polytechnic, Damaturu) is dedicated to providing quality education and fostering academic excellence. Our aim is to equip students with the skills needed for successful careers and contributions to society.</h8>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section">
+            <h2>About TetFund Admin Portal</h2>
+            <h8>This portal allows admins to manage interventions, staff, and funding allocations. Our goal is to provide an efficient platform for managing TetFund initiatives and helping educational institutions grow.</h8>
+        </section>
+    
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Admin Dashboard</p>
+    </footer>
+    <script src="js/passwordProtection.js" defer></script>
+    <script src="js/logout.js"></script>
+
+    <script src="js/typewriter.js"></script>
+
+
+</body>
+</html>
+

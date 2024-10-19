@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TetFund Database</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="database-container">
+        <h1>TetFund Database Overview</h1>
+        <div class="data-section">
+            <h2>Institutions</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Institution ID</th>
+                        <th>Name</th>
+                        <th>Location</th>
+                        <th>Type</th>
+                        <th>Contact Info</th>
+                    </tr>
+                </thead>
+                <tbody id="institutionsTableBody">
+                    <!-- Example Row -->
+                    <tr>
+                        <td>1</td>
+                        <td>FEDPODAM</td>
+                        <td>Lagos, Nigeria</td>
+                        <td>Polytechnic</td>
+                        <td>{"Phone": "08012345678", "Email": "info@fedpodam.edu.ng"}</td>
+                    </tr>
+                    <!-- Add more rows dynamically here -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="data-section">
+            <h2>Funding Allocations</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Funding ID</th>
+                        <th>Institution ID</th>
+                        <th>Amount (₦)</th>
+                        <th>Year</th>
+                        <th>Purpose</th>
+                    </tr>
+                </thead>
+                <tbody id="fundingTableBody">
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>5000000</td>
+                        <td>2024</td>
+                        <td>Infrastructure Development</td>
+                    </tr>
+                    <!-- Add more rows dynamically here -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="data-section">
+            <h2>Projects</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Project ID</th>
+                        <th>Institution ID</th>
+                        <th>Funding ID</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody id="projectsTableBody">
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>New Library Building</td>
+                        <td>Construction of a new library building at FEDPODAM.</td>
+                    </tr>
+                    <!-- Add more rows dynamically here -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="data-section">
+            <h2>Staff Training</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Training ID</th>
+                        <th>Institution ID</th>
+                        <th>Funding ID</th>
+                        <th>Title</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody id="staffTrainingTableBody">
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>Leadership Training</td>
+                        <td>Training program for improving leadership skills among staff.</td>
+                    </tr>
+                    <!-- Add more rows dynamically here -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="data-section">
+            <h2>Beneficiaries</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Beneficiary ID</th>
+                        <th>Name</th>
+                        <th>Institution ID</th>
+                        <th>Funding ID</th>
+                        <th>Program</th>
+                    </tr>
+                </thead>
+                <tbody id="beneficiariesTableBody">
+                    <tr>
+                        <td>1</td>
+                        <td>John Doe</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>Scholarship</td>
+                    </tr>
+                    <!-- Add more rows dynamically here -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="data-section">
+            <h2>Reports</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Report ID</th>
+                        <th>Institution ID</th>
+                        <th>Funding ID</th>
+                        <th>Title</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody id="reportsTableBody">
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>Annual Report 2024</td>
+                        <td>2024-12-31</td>
+                    </tr>
+                    <!-- Add more rows dynamically here -->
+                </tbody>
+            </table>
+        </div>
+
+        <a href="admin-home.html" class="back-btn">Back to Admin Home</a>
+    </div>
+</body>
+</html>

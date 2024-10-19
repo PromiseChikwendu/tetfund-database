@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply for TetFund Intervention - TetFund</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="apply-tetfund-container">
+        <h1>Apply for TetFund Intervention</h1>
+        <form id="applyTetFundForm">
+            <label for="institution">Institution:</label>
+            <input type="text" id="institution" name="institution" required>
+
+            <label for="projectTitle">Project Title:</label>
+            <input type="text" id="projectTitle" name="projectTitle" required>
+
+            <label for="projectDescription">Project Description:</label>
+            <textarea id="projectDescription" name="projectDescription" rows="4" required></textarea>
+
+            <label for="projectBudget">Project Budget (₦):</label>
+            <input type="number" id="projectBudget" name="projectBudget" required>
+
+            <label for="year">Year of Application:</label>
+            <input type="number" id="year" name="year" required>
+
+            <button type="submit">Submit Application</button>
+        </form>
+        <a href="admin-home.html" class="back-btn">Back to Admin Home</a>
+    </div>
+
+    <script src="js/apply-tetfund.js"></script>
+</body>
+</html>

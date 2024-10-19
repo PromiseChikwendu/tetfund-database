@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Staff - TetFund</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="add-staff-container">
+        <h1>Add New Staff</h1>
+        <form id="addStaffForm">
+            <label for="staffName">Staff Name:</label>
+            <input type="text" id="staffName" name="staffName" required>
+
+            <label for="staffRole">Role:</label>
+            <input type="text" id="staffRole" name="staffRole" required>
+
+            <label for="staffDept">Department:</label>
+            <input type="text" id="staffDept" name="staffDept" required>
+
+            <label for="staffPhone">Phone Number:</label>
+            <input type="tel" id="staffPhone" name="staffPhone" required>
+
+            <label for="staffEmail">Email:</label>
+            <input type="email" id="staffEmail" name="staffEmail" required>
+
+            <button type="submit">Add Staff</button>
+        </form>
+        <a href="admin-home.html" class="back-btn">Back to Admin Home</a>
+    </div>
+
+    <script src="js/add-staff.js"></script>
+</body>
+</html>

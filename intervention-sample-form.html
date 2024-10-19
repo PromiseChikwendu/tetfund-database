@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TetFund Intervention Form</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="intervention-form-container">
+        <h1>TetFund Intervention Sample Form</h1>
+
+        <form id="interventionForm">
+            <label for="institutionName">Institution Name:</label>
+            <input type="text" id="institutionName" name="institutionName" required>
+
+            <label for="projectTitle">Project Title:</label>
+            <input type="text" id="projectTitle" name="projectTitle" required>
+
+            <label for="projectDescription">Project Description:</label>
+            <textarea id="projectDescription" name="projectDescription" required></textarea>
+
+            <label for="amountRequested">Amount Requested (₦):</label>
+            <input type="number" id="amountRequested" name="amountRequested" required>
+
+            <label for="startDate">Start Date:</label>
+            <input type="date" id="startDate" name="startDate" required>
+
+            <label for="endDate">End Date:</label>
+            <input type="date" id="endDate" name="endDate" required>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <a href="admin-home.html" class="back-btn">Back to Admin Home</a>
+    </div>
+
+    <script src="js/intervention-sample-form.js"></script>
+</body>
+</html>
